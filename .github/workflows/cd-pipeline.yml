@@ -27,9 +27,9 @@ jobs:
                       if [ ! -d "fastapi-book-project" ]; then
                           git clone https://github.com/KING-REX/fastapi-book-project.git
                       else
+                          cd fastapi-book-project
                           git pull origin main
                       fi
-                      cd fastapi-book-project
                       python3 -m venv venv
                       source venv/bin/activate
                       pip install --upgrade pip
