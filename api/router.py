@@ -6,6 +6,6 @@ api_router = APIRouter()
 
 @api_router.get("/")
 def home():
-    return {"content": "?"}
+    return {"content": "!?"}
 
 api_router.include_router(books.router, prefix="/books", tags=["books"])
